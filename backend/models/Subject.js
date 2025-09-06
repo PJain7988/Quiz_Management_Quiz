@@ -1,12 +1,6 @@
-import mongoose from 'mongoose';
-
-const subjectSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    unique: true,
-  },
+const mongoose = require('mongoose');
+const Subject = new mongoose.Schema({
+  name: { type: String, required: true, unique: true },
+  description: { type: String }
 });
-
-const Subject = mongoose.model('Subject', subjectSchema);
-export default Subject;
+module.exports = mongoose.model('Subject', Subject);

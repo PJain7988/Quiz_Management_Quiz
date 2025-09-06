@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ --brand:#4f46e5; }
+.btn{ @apply px-4 py-2 rounded-2xl shadow bg-indigo-600 text-white hover:bg-indigo-700 transition; }
+.card{ @apply bg-white rounded-2xl shadow p-6; }
+.input{ @apply border rounded-xl px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500; }
+.link{ @apply text-indigo-600 hover:underline; }
